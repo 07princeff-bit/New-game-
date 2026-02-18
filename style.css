@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    background:#111;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+#game_console{
+    width:100%;
+    height:70vh;
+    background:#1a1a1a;
+    position:relative;
+    overflow:hidden;
+}
+
+#player{
+    width:40px;
+    height:40px;
+    background:lime;
+    position:absolute;
+    bottom:60px;
+    left:50px;
+}
+
+#ground{
+    width:100%;
+    height:60px;
+    background:#333;
+    position:absolute;
+    bottom:0;
+}
+
+#deaths_counter,#time_counter{
+    color:white;
+    position:absolute;
+    top:10px;
+}
+
+#deaths_counter{ left:10px; }
+#time_counter{ right:10px; }
+
+/* 📱 Mobile Buttons */
+#mobile_controls{
+    width:100%;
+    height:30vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:#000;
+}
+
+#mobile_controls button{
+    width:80px;
+    height:80px;
+    font-size:30px;
+    border:none;
+    border-radius:50%;
+    background:lime;
+}
