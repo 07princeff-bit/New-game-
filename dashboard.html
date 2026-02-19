@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+<h2>MyPanel</h2>
+<ul>
+<li onclick="showSection('home')">Home</li>
+<li onclick="showSection('users')">Users</li>
+<li onclick="showSection('settings')">Settings</li>
+<li onclick="logout()">Logout</li>
+</ul>
+</div>
+
+<div class="main">
+
+<div id="home" class="section">
+<h1>Dashboard Overview</h1>
+<div class="cards">
+<div class="card">Users<br><span>120</span></div>
+<div class="card">Revenue<br><span>₹45,000</span></div>
+<div class="card">Orders<br><span>320</span></div>
+</div>
+</div>
+
+<div id="users" class="section" style="display:none;">
+<h1>Users Table</h1>
+<table>
+<tr><th>Name</th><th>Email</th></tr>
+<tr><td>Rahul</td><td>rahul@gmail.com</td></tr>
+<tr><td>Suresh</td><td>suresh@gmail.com</td></tr>
+</table>
+</div>
+
+<div id="settings" class="section" style="display:none;">
+<h1>Settings</h1>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
